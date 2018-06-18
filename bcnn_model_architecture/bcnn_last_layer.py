@@ -6,13 +6,11 @@ class model:
 
     def __init__(self, imgs, weights=None, sess=None):
         self.images = imgs
-        # self.imgs=imgs
         self.last_layer_parameters = []
         self.parameters = []
         self.cnn_layers()
         self.fc_layers()
         self.weight_file = weights
-        # self.load_weights(weights, sess)
 
     def cnn_layers(self):
 
